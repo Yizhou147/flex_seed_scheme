@@ -27,8 +27,11 @@ topics:
   - color
   - materialdesign
 
+# PiliPlus ARM64 fork: relax the Dart constraint to accept the community
+# ARM64 SDK's prerelease Dart (3.13.0-266.0.dev), which semver treats as
+# < 3.13.0. Code is unchanged from upstream 5.0.1.
 environment:
-  sdk: '>=3.13.0 <4.0.0'
+  sdk: '>=3.13.0-0 <4.0.0'
   flutter: '>=3.47.0'
 
 dependencies:
